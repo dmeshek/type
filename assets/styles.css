@@ -1,0 +1,571 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   max-width: 1440px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "helvetica-neue";
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+body {
+    max-width: 1440px;
+    overflow: hidden;
+    
+}
+
+@font-face {
+    font-family: "nixie";
+    src: url(./fonts/NixieOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "helvetica-italic";
+    src: url(./fonts/HelveticaNeueItalic.ttf);
+}
+
+@font-face {
+    font-family: "helvetica-neue";
+    src: url(./fonts/HelveticaNeueLight.otf);
+}
+
+@font-face {
+    font-family: "alegreya-sc";
+    src: url(./fonts/AlegreyaSC-Medium.ttf);
+}
+
+@font-face {
+    font-family: "alegreya-sans";
+    src: url(./fonts/AlegreyaSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "helvetica-bold";
+    src: url(./fonts/HelveticaNeueBold.otf);
+}
+
+/*img {
+    max-width: 100%;
+}*/
+
+h1 {
+    font-family: "nixie";
+    font-size: 5.6rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2.24rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+h3 {
+    font-family: "alegreya-sans";
+    color: #3A4F52;
+    font-size: 3.6rem;
+}
+
+h4 {
+    font-size: 3.6rem;
+    font-family: "alegreya-sans";
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.date {
+    font-size: 1.4rem;
+    font-family: "helvetica-italic";
+}
+
+a {
+    font-size: 1.4rem;
+    color: #4DA7CA;
+}
+
+.bold {
+    font-size: 3.7rem;
+     font-family: "helvetica-bold";
+}
+
+.green {
+    margin-top: 1rem;
+    color: #3A4F52;
+    border: 1px solid #3A4F52;
+    background-color: transparent;
+    width: 9.66rem;
+    height: 4.6rem;
+    font-size: 1.8rem;
+    transition: 0.8s;
+}
+
+header {
+    background-image: url(./fotos/header.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dion */
+
+/* Header */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    padding: 2vh;
+
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    margin-top: -3%;
+}
+
+.logo{
+    font-size: 3.5rem;
+    color: white;
+    font-family: "alegreya-sc";
+}
+
+
+.hamburger div{
+    cursor: pointer;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(249, 249, 249);
+    margin: 6px 4vw 0 0 ;
+}
+
+
+
+/* Testimonials 
+.testimonials {
+    padding: 5rem;
+    margin-bottom: 5rem;
+}
+
+.testimonials h3 {
+    text-align: center;
+}
+
+.testimonials p {
+    text-align: center;
+    color: black;
+    margin: 1.2rem 0;
+}
+
+.testimonials_container{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonials_round{
+    text-align: center;
+}
+
+.testimonials_round img{
+    padding-right: 90px;
+}
+
+.bold {
+    font-size: 1.2rem;
+}
+
+
+.testimonials_container img{
+    padding-left: 95px;
+}*/
+/* Pablo */
+
+
+.green:hover {
+    background-color: #2B3E51;
+    color: white;
+    border: none;
+}
+
+/* On Latest Works */
+
+.entries {
+    height: 100vh;
+    width: 100vw;
+    max-width: 1440px;
+    padding: 6rem 15rem;
+    background-color: #F1F0F0;
+}
+
+.works {
+    max-height: 743.34px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+
+.title h3 {
+    margin-bottom: 1.6rem;
+}
+
+.title p {
+    size: 1.4rem;
+    color: #6A6A6A;
+}
+
+.gallery {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.gallery div {
+    height: 220px;
+    width: 138.78px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+}
+
+.gallery div:hover {
+    background-size: 200%;
+    background-blend-mode:screen;
+}
+
+
+.gallery div:nth-child(1) {
+    background-image: url(./fotos/bild1.png);
+    width: calc((100% - 6rem) / 3);
+}
+.gallery div:nth-child(2) {
+    background-image: url(./fotos/bild2.png);
+    width: calc((100% - 6rem) / 3);
+}
+.gallery div:nth-child(3) {
+    background-image: url(./fotos/bild3.png);
+    width: calc((100% - 6rem) / 3);
+}
+.gallery div:nth-child(4) {
+    background-image: url(./fotos/bild4.png);
+    width: calc((100% - 6rem) / 3);
+}
+.gallery div:nth-child(5) {
+    background-image: url(./fotos/bild6.png);
+    width: calc((100% - 6rem) / 3);
+}
+.gallery div:nth-child(6) {
+    background-image: url(./fotos/bild7.png);
+    width: calc((100% - 6rem) / 3);
+}
+
+div button {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 11.8rem;
+    height: 3.4rem;
+    font-size: 1.4rem;
+   
+} 
+
+
+/* From The Blog */
+
+.blog {
+    max-height: 870px;
+  
+}
+
+
+
+.articles_container {
+    display: flex;
+    gap: 3rem;
+}
+
+.blog h3, .blog p {
+    margin: 1.8rem 0;
+    color: #6A6A6A;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #2B3E51;
+    color: white;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.6rem;
+    margin-left: 15rem;
+}
+/* Anna */
+
+
+/* Transparent */
+
+.transparent {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.transparent .headline {
+ color: white;
+ padding-top: 5vh;
+}
+
+.headline h3 {
+    color: white;
+}
+
+.transparent_black {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); 
+    margin: 5% 10%;
+}
+
+.services {
+    background-image: url(./fotos/services.jpg);
+    padding:  5% 10%;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+    gap: 5%;
+}
+
+.center {
+    width: 30%;
+    min-width: 200px;
+}
+
+.services img {
+    width: 3rem;
+    margin: 1%;
+}
+
+.center h4 {
+    margin: 5% auto;
+}
+
+/* Quote */
+
+.quote {
+    background-image: url(./fotos/green_chair.png);
+    height: auto;
+    padding:  5% 10%;
+}
+
+.square {
+    padding: 5%;
+}
+
+.square p {
+    font-size: 3rem;
+    line-height: 4rem;
+    padding-bottom: 4%;
+}
+
+.white {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 12rem;
+    height: 4.6rem;
+    transition: 0.8s;
+}
+
+.white:hover {
+    background-color: white;
+    color: #3A4F52;
+    cursor: pointer;
+}
+
+/* Contact */
+
+.contact {
+    background-image: url(./fotos/contact.png);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.form_container {
+    width: 40%;
+    margin: 5% auto;
+} 
+
+form {
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+textarea {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+    color: white;
+    background: transparent;
+}
+
+/* END */
+
+
+section {
+    /* border: 1px solid red; */
+}
+
+
+@media only screen and (max-width: 768px) {
+    .entries {
+        padding: 2.4rem 2.4rem;
+    }
+
+    .hero {
+        margin-top: -7%;
+    }
+         /* Pablo */
+         /* Our latest Works */
+
+         /* from the blog */
+    
+         /* Footer */
+
+
+        /* Anna */
+        /* Services */
+
+        /* Quote */
+
+        /* Contact */
+
+        /* Dion */
+        /* Header */
+
+        /* Testimonials */
+    
+    
+    
+    
+        .testimonials_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            gap: 4rem;
+        }
+
+        .testimonials_round{
+            text-align: center;
+        }
+
+        .bold {
+            font-size: 1.2rem;
+        }
+
+        .transparent{
+            
+            padding-left: 290px;
+            padding-bottom: 80px;
+            padding-top: 30px;
+        }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    .entries {
+        padding: 2.4rem 2.4rem;
+    }
+    h1 {
+        font-size: 4.8rem;
+        text-align: center;
+        padding: 2vh 0;
+    }
+         /* Pablo */
+         /* Our latest Works */
+
+         /* from the blog */
+
+         /* Footer */
+
+
+        /* Anna */
+        /* Services */
+
+        /* Quote */
+
+        /* Contact */
+
+        /* Dion */
+        /* Header */
+
+        /* Testimonials */
+        
+        .transparent{
+            border: 1px solid red;
+            display: flex;
+            padding-left: 120px;
+
+        }
+
+        .testimonials_container{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            border: 1px solid red;
+            margin: 20px;
+            align-items: center;
+            
+        }
+        .testimonials_round{
+            text-align: center;
+        }
+        .bold {
+            font-size: 1.2rem; 
+        }  
+    
+}
+
+
+/*  Dion:   Header
+            Testimonials
+    Pablo:  Our latest work
+            From The Blog
+            Footer
+    Anna:   Transparent
+*/
